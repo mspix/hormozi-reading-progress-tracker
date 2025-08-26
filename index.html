@@ -764,7 +764,9 @@
             if (remaining > 0) {
                 const today = new Date();
                 const targetDate = new Date(today.getTime() + (daysToFinish * 24 * 60 * 60 * 1000));
-                finishDate.textContent = targetDate.toLocaleDateString('en-US');
+                // Format: 09 Dec 2025
+                const options = { year: 'numeric', month: 'short', day: '2-digit' };
+                finishDate.textContent = targetDate.toLocaleDateString('en-GB', options); // "09 Dec 2025"
             } else {
                 finishDate.textContent = 'DONE! 🎉';
             }
