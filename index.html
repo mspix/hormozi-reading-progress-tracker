@@ -15,12 +15,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
         }
         
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -449,6 +448,11 @@
                 margin-bottom: 10px;
                 margin-right: 0;
             }
+
+            .footer {
+                padding: 15px;
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -470,9 +474,9 @@
                 <label for="book-select">📚 Which book are you reading?</label>
                 <select id="book-select">
                     <option value="">Select a book...</option>
+                    <option value="money-models" data-pages="176">$100M Money Models (176 pages)</option>
                     <option value="leads" data-pages="273">$100M Leads (273 pages)</option>
                     <option value="offers" data-pages="153">$100M Offers (153 pages)</option>
-                    <option value="shortcuts" data-pages="176">$100M Money Models (176 pages)</option>
                 </select>
             </div>
             
@@ -535,11 +539,16 @@
                 
                 <button class="reset-button" id="reset-button">🔄 Reset Progress</button>
             </div>
+
+            <div class="disclaimer-section">
+                <h4>📋 Disclaimer</h4>
+                <p><strong>Not affiliated with Acquisition.com or Alex/Leila Hormozi.</strong> Educational community only. All content and images are owned by Acquisition.com.</p>
+            </div>
         </div>
-        <div class="disclaimer-section">
-            <h4>📋 Disclaimer</h4>
-            <p><strong>Not affiliated with Acquisition.com or Alex/Leila Hormozi.</strong> Educational community only. All content and images are owned by Acquisition.com.</p>
-        </div>
+    </div>
+
+    <div class="footer">
+        <p>Built with ❤️ by the $100M Money Models Lab Community</p>
     </div>
     
     <script>
